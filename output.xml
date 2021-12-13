@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211213 19:36:02.413" rpa="false" schemaversion="2">
+<suite id="s1" name="Sort product price (low to high)" source="c:\Users\pioqu\Downloads\Exercisesauce\tests\Sort product price (low to high).robot">
+<test id="s1-t1" name="Sort product price (low to high)">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 19:36:02.598" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 19:36:02.598" endtime="20211213 19:36:04.230"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 19:36:04.231" endtime="20211213 19:36:04.372"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20211213 19:36:04.393" level="INFO">Current page contains element 'login-button'.</msg>
+<status status="PASS" starttime="20211213 19:36:04.373" endtime="20211213 19:36:04.394"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 19:36:04.394" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 19:36:04.394" endtime="20211213 19:36:04.526"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 19:36:04.527" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 19:36:04.579" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 19:36:04.634" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 19:36:04.527" endtime="20211213 19:36:04.634"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211213 19:36:04.635" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 19:36:04.634" endtime="20211213 19:36:04.771"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>class:title</arg>
+<arg>PRODUCTS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211213 19:36:04.772" level="INFO">Verifying element 'class:title' contains exact text 'PRODUCTS'.</msg>
+<status status="PASS" starttime="20211213 19:36:04.771" endtime="20211213 19:36:04.848"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>class:product_sort_container</arg>
+<arg>Price (low to high)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211213 19:36:04.849" level="INFO">Selecting options from selection list 'class:product_sort_container' by label Price (low to high).</msg>
+<status status="PASS" starttime="20211213 19:36:04.849" endtime="20211213 19:36:04.949"/>
+</kw>
+<status status="PASS" starttime="20211213 19:36:02.597" endtime="20211213 19:36:04.950"/>
+</test>
+<doc>A resource file with reusable keywords and variables</doc>
+<status status="PASS" starttime="20211213 19:36:02.415" endtime="20211213 19:36:04.952"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sort product price (low to high)">Sort product price (low to high)</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

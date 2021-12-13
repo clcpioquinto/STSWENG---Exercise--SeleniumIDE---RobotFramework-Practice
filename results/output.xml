@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211213 19:40:12.642" rpa="false" schemaversion="2">
+<suite id="s1" name="Exercisesauce" source="C:\Users\pioqu\Downloads\Exercisesauce">
+<suite id="s1-s1" name="Tests" source="C:\Users\pioqu\Downloads\Exercisesauce\tests">
+<suite id="s1-s1-s1" name="Sort product name (A to Z)" source="C:\Users\pioqu\Downloads\Exercisesauce\tests\Sort product name (A to Z).robot">
+<test id="s1-s1-s1-t1" name="Sort product name (A to Z)">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 19:40:12.843" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211213 19:40:12.842" endtime="20211213 19:40:14.644"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 19:40:14.646" endtime="20211213 19:40:14.775"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20211213 19:40:14.798" level="INFO">Current page contains element 'login-button'.</msg>
+<status status="PASS" starttime="20211213 19:40:14.776" endtime="20211213 19:40:14.799"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 19:40:14.801" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211213 19:40:14.800" endtime="20211213 19:40:14.944"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 19:40:14.946" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20211213 19:40:14.985" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211213 19:40:15.031" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211213 19:40:14.945" endtime="20211213 19:40:15.032"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211213 19:40:15.033" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20211213 19:40:15.033" endtime="20211213 19:40:15.128"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>class:title</arg>
+<arg>PRODUCTS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211213 19:40:15.130" level="INFO">Verifying element 'class:title' contains exact text 'PRODUCTS'.</msg>
+<status status="PASS" starttime="20211213 19:40:15.129" endtime="20211213 19:40:15.175"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>class:product_sort_container</arg>
+<arg>Name (A to Z)</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20211213 19:40:15.177" level="INFO">Selecting options from selection list 'class:product_sort_container' by label Name (A to Z).</msg>
+<status status="PASS" starttime="20211213 19:40:15.176" endtime="20211213 19:40:15.221"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>class:active_option</arg>
+<arg>NAME (A TO Z)</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211213 19:40:15.223" level="INFO">Verifying element 'class:active_option' contains exact text 'NAME (A TO Z)'.</msg>
+<status status="PASS" starttime="20211213 19:40:15.222" endtime="20211213 19:40:15.244"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 19:40:15.245" endtime="20211213 19:40:17.499"/>
+</kw>
+<status status="PASS" starttime="20211213 19:40:12.842" endtime="20211213 19:40:17.500"/>
+</test>
+<doc>A resource file with reusable keywords and variables</doc>
+<status status="PASS" starttime="20211213 19:40:12.673" endtime="20211213 19:40:17.503"/>
+</suite>
+<status status="PASS" starttime="20211213 19:40:12.670" endtime="20211213 19:40:17.508"/>
+</suite>
+<status status="PASS" starttime="20211213 19:40:12.646" endtime="20211213 19:40:17.511"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercisesauce">Exercisesauce</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Exercisesauce.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Sort product name (A to Z)">Exercisesauce.Tests.Sort product name (A to Z)</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
